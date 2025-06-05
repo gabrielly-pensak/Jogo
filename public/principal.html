@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+  
+</head>
+<body>
+    <div class="container">
+    <h1 class="center">Alura Typer</h1>
+    <p class="frase center">Esta frase tem seis belas palavras</p>
+
+    <ul class="informacoes center">
+       <li>
+            <i class="bi bi-file-earmark-text"></i>
+            <span id ="tamanho-frase">5 </span> palavras
+        </li>
+
+        <li>
+            <i class="bi bi-clock"></i>
+            <span id="tempo-digitacao">10 </span> Segundos
+        </li>
+    </ul>
+
+    <textarea class="campo-digitacao" rows="8" cols="40" ></textarea>
+
+<div class="botoes">
+    <a id="botao-reiniciar">
+    <button type="button" class="btn btn-warning" >Reiniciar</button>
+    </a>
+</div>
+
+    <ul class="center">
+        <li><span id="contador-caracteres">0 </span> caracteres</li>
+        <li><span id="contador-palavras">0</span> palavras</li>
+    </ul>
+    <section class = "placar">
+        <h3 class="center">Placar</h3>
+        <table class="centered bordered">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>N° palavras</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Douglas</td>
+                    <td>10</td>
+                    <td>
+                    <a href="#" class="botao-remover">
+                        <i class="bi bi-trash3-fill"></i>
+                    </a>
+                </td>
+                </tr>  
+            </tbody>
+        </table>
+    </section>
+        
+    </section>
+    </div>
+    <script src ="js/jquery.js"></script>
+    <script src ="js/main.js"></script>
+    <script src ="js/placar.js"></script>
+</body>
+</html>
