@@ -19,3 +19,31 @@
 .campo-errado{
     border: 6px solid red;
 }
+.placar{
+    display: none;
+}
+
+#erro{
+ color: red;
+ display: none;
+}
+
+#spinner{
+    display: none;
+}
+#frase-id{
+    width: 40px;
+}
+
+#botao-sync{
+    float: right;
+}
+
+.select-usuarios{
+    display: inline-block;
+}
+
+.selectize-control{
+    width: 150px;
+    vertical-align: middle;
+}

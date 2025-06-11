@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <title>Alura Typer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-  
+   
 </head>
 <body>
     <div class="container">
     <h1 class="center">Alura Typer</h1>
-    <p class="frase center">Esta frase tem seis belas palavras</p>
+    <p class="frase center">Esta frase tem seis belas palavras e estouy escrevendo para testar se desconfigura o texto e precisa ser um texto bem grande para testar </p>
+         
+    <div class="center">
+        <img src="img/spinner.gif" alt="spinner" id="spinner">
+        <p id="erro">Ocorreu um erro, por favor tente novamente</p>
+    </div>
 
     <ul class="informacoes center">
        <li>
@@ -30,7 +37,29 @@
 
 <div class="botoes">
     <a id="botao-reiniciar">
-    <button type="button" class="btn btn-warning" >Reiniciar</button>
+       <button type="button" class="btn btn-outline-warning">Reiniciar</button>
+    </a>
+    <a id="botao-placar">
+       <button type="button" class="btn btn-outline-green">Placar</button>
+    </a>
+    <a id="botao-gerarFrase">
+        <button type="button" class="btn btn-outline-blue">Gerar Frase</button>
+    </a>
+    <a id="botao-fraseId">
+        <button type="button" class="btn btn-outline-cyan">Escolher frase</button>
+    </a>
+    <input type="number" id="frase-id" min="0">
+
+    <div class="select-usuarios">
+        <select id="usuarios">
+            <option value="Douglas">Douglas</option>
+            <option value="Ana">Ana</option>
+            <option value="Flavio">Flavio</option>
+        </select>
+    </div>
+    
+    <a id="botao-sync" title="Sincronizado com sucesso!">
+        <button type="button" class="btn btn-outline-cyan">Sincronizar</button>
     </a>
 </div>
 
@@ -67,5 +96,9 @@
     <script src ="js/jquery.js"></script>
     <script src ="js/main.js"></script>
     <script src ="js/placar.js"></script>
+    <script src ="js/frase.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/tooltipster.main.js"></script>
+    
 </body>
 </html>
